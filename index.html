@@ -160,7 +160,7 @@
     background: var(--surface);
   }
   .stats-inner {
-    display: grid; grid-template-columns: repeat(2, 1fr);
+    display: grid; grid-template-columns: repeat(3, 1fr);
     max-width: 1120px; margin: 0 auto; padding: 0 5vw;
   }
   .stat-item {
@@ -256,6 +256,8 @@
     font-size: 13px; font-weight: 500; color: var(--gold);
   }
   .tg-badge svg { width: 20px; height: 20px; fill: var(--gold); flex-shrink: 0; }
+  a.tg-badge { cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+  a.tg-badge:hover { background: rgba(245,166,35,0.12); border-color: rgba(245,166,35,0.45); }
   .philosophy-cards { display: flex; flex-direction: column; gap: 14px; }
   .phil-card {
     background: var(--black);
@@ -423,7 +425,9 @@
   <p class="hero-eyebrow fade-up d1">Performance Affiliate Network</p>
   <h1 class="fade-up d2">Built by Media Buyers.<br><em>Engineered</em><br>for Scale.</h1>
   <p class="hero-sub fade-up d3">
-    We spent a decade in the trenches as affiliates before launching our own network. We understand performance marketing natively. We created a new wheel for Affiliate marketing by creating a new conversion flow, CPF. 
+    We spent a decade in the trenches as affiliates before launching our own network.
+    We understand performance marketing natively — and we created a new conversion
+    flow that changes the game.
   </p>
   <div class="hero-cpf fade-up d4" onclick="document.getElementById('cpf-modal').classList.add('open')">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
@@ -451,7 +455,10 @@
       <div class="stat-number">150<span>+</span></div>
       <div class="stat-label">Verified Live Affiliates</div>
     </div>
-
+    <div class="stat-item reveal">
+      <div class="stat-number">200<span>+</span></div>
+      <div class="stat-label">In-House Offers</div>
+    </div>
   </div>
 </div>
 
@@ -532,10 +539,10 @@
         <span class="section-tag reveal">How We Work</span>
         <h2 class="reveal">Human-Centric Support for High-Performance Buyers</h2>
         <p class="reveal">Eliminate automated ticketing delays. Connect directly with your dedicated Account Manager via Telegram for instant support and faster operational workflow.</p>
-        <div class="tg-badge reveal">
+        <a href="https://t.me/Yami_Leads" target="_blank" rel="noopener noreferrer" class="tg-badge reveal" style="text-decoration:none;">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.25 13.756l-2.965-.924c-.645-.204-.657-.645.136-.953l11.57-4.461c.537-.194 1.006.131.903.803z"/></svg>
           No bots. Direct real-time human support via Telegram.
-        </div>
+        </a>
       </div>
       <div class="philosophy-cards">
         <div class="phil-card reveal">
@@ -606,9 +613,9 @@
     <button class="modal-close" onclick="document.getElementById('cpf-modal').classList.remove('open')" aria-label="Close">×</button>
     <div class="modal-tag">The CPF Model</div>
     <h3>What is CPF?</h3>
-    <p>CPF stands for <strong style="color:var(--gold);font-weight:600;">Cost Per Friend</strong> — a conversion model where the action is a user adding friend using Line App. Built on trust and social proof, it converts differently from standard CPA or CPL offers.</p>
-    <p>We invented it and  We bridged the gap between advertisers running CPF campaigns and performance marketers who had never seen this model before, opening up a flow that most networks simply don't have.</p>
-    <p>The result? Significantly better EPC and ROI for affiliates who runing it.</p>
+    <p>CPF stands for <strong style="color:var(--gold);font-weight:600;">Cost Per Friend</strong> — a conversion model where the action is a user adding a friend using the Line App. Built on trust and social proof, it converts differently from standard CPA or CPL offers.</p>
+    <p>We invented it — and we bridged the gap between advertisers running CPF campaigns and performance marketers who had never seen this model before, opening up a flow that most networks simply don't have.</p>
+    <p>The result? Significantly better EPC and ROI for affiliates who are running it.</p>
     <a href="https://yamileads.affise.com/v2/sign/up" class="btn-primary" style="width:100%;justify-content:center;">Get Access to CPF Offers</a>
   </div>
 </div>
